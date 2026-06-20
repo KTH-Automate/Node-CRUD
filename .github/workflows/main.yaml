@@ -1,0 +1,16 @@
+name: "Main Workflow"
+
+# Trigger point for the workflow - pull request to the dev branch
+on:
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  build:
+    name: "Node project build"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Hello World"
+        run: echo "Hello World"
+      
